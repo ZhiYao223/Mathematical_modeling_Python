@@ -1,6 +1,5 @@
 '''
 层次分析法传送门：https://blog.csdn.net/qq_25990967/article/details/122820595
-
 '''
 import  numpy as np
 import pandas as pd
@@ -48,6 +47,7 @@ if CR >= 0.1:
         print('没有通过一致性检验\n')
 else:
         print('通过一致性检验\n')
+
 
 #计算评分 显示出所有评分对象的评分值
 score = p*weight
