@@ -85,7 +85,7 @@ def midTomax(bestx,x): #bestx为中间型指标的最佳值
     ans = [[(1-e/M)] for e in h]#计算每个差值占最大差值的比例，并从1中减去，得到新指标值
     return np.array(ans) #返回处理后的numpy数组
 
-#区间型指标哦转化为极大型指标的函数
+#区间型指标转化为极大型指标的函数
 def regTomax(lowx,highx,x):
     x = list(x) #将输入的指标数据转换为列表
     M = max(lowx-min(x),max(x)-highx) #计算指标值超出区间的最大值
